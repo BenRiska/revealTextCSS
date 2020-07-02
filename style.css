@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  height: 100vh;
+  background: 000;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color: #ddd;
+  font-size: 5em;
+  font-family: sans-serif;
+  letter-spacing: 0.2em;
+}
+h1 span {
+  display: inline-block;
+  animation: animate 3s linear;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0%;
+    transform: rotateY(90deg);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 100%;
+    transform: rotateY(0deg);
+    filter: blur(0px);
+  }
+}
